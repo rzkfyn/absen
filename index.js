@@ -6,7 +6,6 @@ wa.create({sessionId: "idk",authTimeout: 60,blockCrashLogs: true,disableSpins: t
 
 const start = bot => {
     bot.onMessage(async message => {
-      console.log(message);
         if(message.author !== noWakel || message.body.toUpperCase().split('*').length < 2) return;
         for(let a of message.body.toUpperCase().split('*')){
               if(a.startsWith('SMK')) return await bot.sendText(message.from, `*${a}*`);
