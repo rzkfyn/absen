@@ -2,9 +2,10 @@
   "name": "absen-bot",
   "version": "1.0.0",
   "description": "Bot simple yang cuma bisa bales chat doang kalo wakel nyuruh absen h3h3",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "test": "node ."
+    "start": "ts-node index.ts",
+    "test": "-"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "dependencies": {
     "@open-wa/wa-automate": "^4.23.7",
     "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^17.0.18",
+    "ts-node": "^10.5.0"
   }
 }
