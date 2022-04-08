@@ -2,10 +2,11 @@
   "name": "absen-bot",
   "version": "0.0.1",
   "description": "Bot simple yang cuma bisa bales chat doang kalo wakel nyuruh absen h3h3",
-  "main": "index.ts",
+  "main": "./dist/index.js",
   "scripts": {
-    "start": "ts-node index.ts",
-    "test": "-"
+    "dev": "node ./node_modules/ts-node/dist/bin.js index.ts",
+    "build": "node ./node_modules/typescript/bin/tsc --build tsconfig.json",
+    "start": "node ."
   },
   "repository": {
     "type": "git",
